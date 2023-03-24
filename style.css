@@ -217,10 +217,14 @@ input:checked + .slider
 }
 /*.................About........*/
 #about {
-  padding: 150px 0;
+  padding: 50px 0;
   background-color: black;
   color: white;
+  text-align:center;
+   scroll-margin-top:100px;
+   scroll-margin-bottom:200px;
 }
+ 
 #about p {
   font-size: 20px;
 }
@@ -248,7 +252,8 @@ input:checked + .slider
   flex-wrap: wrap;
 }
 .skilloverall {
-  gap:20rem;
+  display:flex;
+  gap:30rem;
   margin-bottom: 2rem;
   padding: 1rem 2rem;
   font-size: 1.5rem;
@@ -257,6 +262,7 @@ input:checked + .slider
   border: 2px solid black;
   border-radius: 10px;
   box-shadow: 0px 0px 5px 5px white;
+  
 }
 .skill:hover
 {
@@ -287,7 +293,7 @@ background-position:center;
 background-size:cover;
 background-repeat:no-repeat;
 width:100%;
-height:100vh;
+height:100%;
 }
 .project-title
 {
@@ -320,7 +326,7 @@ border-radius:10px;
 }
 
 .project{
-   background-color:black;
+   background-color:transparent;
     color:white;
     font-weight:300;
     font-size:12px;
@@ -343,9 +349,10 @@ border-radius:10px;
   font-weight:500px;
   font-size:20px;
 }
- .clock{
+ .projectp{
   padding-top:30px;
   padding-bottom:15px;
+  font-size:15px;
 }
 .project-list div a{
     text-decoration:none;
@@ -355,16 +362,14 @@ border-radius:10px;
     display:inline-block;
  
 }
-.project-list div p{
-  font-size:15px;
-}
+
 .project-list div a:hover{
     transform:scale(1.5);
     color:black;
    
 }
 .project-list div:hover
-{background:rgba(0, 0, 255, 0.721);
+{background:blue;
     transform: translate(-10px);
 
 }
@@ -563,7 +568,7 @@ input:focus,textarea:focus {
   background-color:rgba(0, 0, 255, 0.727);
   color:white;
 }
-.copywrite
+footer .copywrite
 { 
   width:100%;
   position:fixed;
@@ -626,7 +631,7 @@ input:focus-visible{
 .work-title
 {
  
-  margin-top:500px;
+  margin-top:auto;
 }
 
 
@@ -670,6 +675,11 @@ input:focus-visible{
 {background:rgba(0, 0, 255, 0.724);
     transform: translate(-8px);
 }
+.project{
+  background-color:navy;
+   margin-left:20px;
+   margin-right:20px;
+}
 
 .workimg:hover img{
   transform:scale(1.1);
@@ -677,7 +687,7 @@ input:focus-visible{
   .work-title
 {
  
-  margin-top:900px;
+  margin-top:auto;
 
   ;
 }
