@@ -10,7 +10,7 @@
 
 </head>
 <body>    
-    <header>
+    <header id="top">
         <nav>
     <div class="navbar">
         <img src="./image/priyankapic.jpg" class="logo">
@@ -175,18 +175,18 @@
               <a href="https://codepen.io/Priyanka-mehta02"><i class="fa-brands fa-codepen"></i></a>
               <a href="https://www.figma.com/"><i class="fa-brands fa-figma"></i></a>
               <a href="https://github.com/priyanka-mehta02"><i class="fa-brands fa-github"></i></a>
-            
+            <span class="bktop"><a href="#top">Back to top</a></span>
         </div>
     </div>
     <div class="contact-colr">
         <div class="contact-form">
         <form>
             <label for="fname">First name</label><br>
-            <input type="text" id="fname" name="fname"><br>
+            <input type="text" id="fname" name="fname"  pattern="\w{3,16}" ><br>
             <label for="lname">Last name</label><br>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input type="text" id="lname" name="lname"pattern="\w{3,16}" ><br><br>
             <label for="ftextarea">Enter your message</label><br><br>
-            <textarea name="message" placeholder="enter your msg"rows="5" cols="15">Enter your msg"
+            <textarea name="message" placeholder="enter your msg"rows="5" cols="15" minlength="10" maxlength="120">Enter your msg"
                 </textarea>
             <input type="submit" value="Submit" class="buttn">
           </form>
