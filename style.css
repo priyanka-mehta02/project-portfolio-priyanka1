@@ -125,7 +125,7 @@ display:inline-block;
   left:0;
   right:0;
   bottom:0;
-  background-color:rgba(0, 0, 255, 0.707);
+  background-color:palevioletred;
   transition:0.4s;
   border-radius:30px;
 }
@@ -135,8 +135,8 @@ display:inline-block;
 .slider::before{
   position:absolute;
   content:"";
-  height:30px;
-  width:30px;
+  height:27px;
+  width:27px;
   left:2px;
   bottom:2px;
   background:white;
@@ -237,7 +237,7 @@ input:checked + .slider
 .about-col1,
 .about-col2 {
   flex-basis:40%;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 .about-col1 h2,
@@ -245,6 +245,7 @@ input:checked + .slider
   font-size: 30px;
   font-weight: 600;
   padding-bottom: 10px;
+  margin-bottom:30px;
 }
 
 .skill {
@@ -254,7 +255,8 @@ input:checked + .slider
 .skilloverall {
   display:flex;
   gap:30rem;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
+  margin-right:20px;
   padding: 1rem 2rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -327,6 +329,8 @@ border-radius:10px;
 
 .project{
    background-color:transparent;
+   margin-left: 20px;
+   margin-right:20px;
     color:white;
     font-weight:300;
     font-size:12px;
@@ -499,13 +503,13 @@ position:sticky;
 left:0;
 bottom:0;
 width:100%;
-border:2px solid white;
+/*border:2px solid white;*/
+
   }
   .contact-row
   {
     display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-
   }
   .cont-title
   {
@@ -525,20 +529,21 @@ padding-top:20px;
     padding:20px;
   }
  .contact-coll
-{
+{margin-top:50px;
 font-size:20px;
-color:white;
+color:black;
 margin-left:20px;
 }
+
 .contact-icons i
 {
 font-size:20px;
-color:rgba(0, 0, 255, 0.727);
+color:gray;
 display:inline-block;
 margin-left:18px;
 }
 .contact-icons i:hover{
-  color:white;
+  color:blue;
 }
 .contact-form
 {
@@ -593,11 +598,11 @@ input:focus-visible{
   header nav .menuitem {
     display: none;
   }
-  /*.logoname
+  .logoname
   {
-    margin:auto;
+ margin-right:20px;
     
-  }*/
+  }
   .toggcontainer
 {
   display:none;
@@ -633,7 +638,17 @@ input:focus-visible{
  
   margin-top:auto;
 }
-
+.project{
+ 
+   margin-left:20px;
+   margin-right:20px;
+}
+.contact-row
+  {
+    display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:100px
+}
 
 /*------------------media-360--------------*/
 @media (max-width: 360px)
@@ -644,6 +659,10 @@ input:focus-visible{
   }
   .logo{
     padding-left:5px;
+  }
+  .logoname
+  {
+    padding-right:20px;
   }
   .textcenter_banner
   {position: relative;
@@ -676,7 +695,7 @@ input:focus-visible{
     transform: translate(-8px);
 }
 .project{
-  background-color:navy;
+
    margin-left:20px;
    margin-right:20px;
 }
@@ -689,7 +708,7 @@ input:focus-visible{
  
   margin-top:auto;
 
-  ;
+  
 }
   .workimg:hover .workinfo
   {
@@ -701,7 +720,18 @@ input:focus-visible{
    object-fit: cover;
   }
 }
-
+footer .copywrite
+{
+ 
+  font-size:15px;
+}
+/*.cont-title {
+ 
+  font-size: 15px;
+}
+.cont-email {
+  font-size: 8px;
+}*/
 @media only screen and (min-width: 972px) {
   .work-title
   {
